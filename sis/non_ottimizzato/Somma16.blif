@@ -1,0 +1,40 @@
+.model Somma16
+.inputs C9 C8 C7 C6 C5 C4 C3 C2 C1 C0
+.outputs O15 O14 O13 O12 O11 O10 O9 O8 O7 O6 O5 O4 O3 O2 O1 O0
+
+.subckt Costante0 O=Costante0
+
+.subckt Uguale A=Costante0 O=O15
+
+.subckt Uguale A=Costante0 O=O14
+
+.subckt Uguale A=Costante0 O=O13
+
+.subckt Uguale A=Costante0 O=O12
+
+.subckt Uguale A=Costante0 O=O11
+
+.subckt Uguale A=Costante0 O=O10
+
+.subckt Uguale A=C9 O=O9
+
+.subckt Uguale A=C8 O=O8
+
+.subckt Uguale A=C7 O=O7
+
+.subckt Uguale A=C6 O=O6
+
+.subckt Uguale A=C5 O=O5
+
+.subckt Uguale A=C4 O=O4
+
+.subckt Uguale A=C3 O=O3
+
+.subckt Uguale A=C2 O=O2
+
+.subckt Uguale A=C1 O=O1
+
+.subckt Uguale A=C0 O=O0
+
+.search Uguale.blif
+.search Costante0.blif

@@ -1,0 +1,100 @@
+.model DATAPATH
+.inputs C9 C8 C7 C6 C5 C4 C3 C2 C1 C0 CD15 CD14 CD13 CD12 CD11 CD10 CD9 CD8 \
+CD7 CD6 CD5 CD4 CD3 CD2 CD1 CD0 CKD
+.outputs O9i O8i O7i O6i O5i O4i O3i O2i O1i O0i O
+.default_input_arrival 0.00 0.00 
+.default_output_required 0.00 0.00 
+.default_input_drive 0.20 0.20 
+.default_output_load 1.00 
+.default_max_input_load 999.00 
+.names C9 [655]
+0 1
+.names CD12 [707]
+0 1
+.names C8 [657]
+0 1
+.names CD10 [711]
+0 1
+.names C6 [659]
+0 1
+.names CD8 [715]
+0 1
+.names C4 [661]
+0 1
+.names CD6 [719]
+0 1
+.names C2 [663]
+0 1
+.names CD4 [723]
+0 1
+.names C0 [665]
+0 1
+.names CD3 [665] CD2 [563]
+00- 1
+0-0 1
+.names [723] C1 [563] [790]
+0-- 1
+-00 1
+.names CD5 [663] [790] [561]
+00- 1
+0-0 1
+.names [719] C3 [561] [786]
+0-- 1
+-00 1
+.names CD7 [661] [786] [559]
+00- 1
+0-0 1
+.names [715] C5 [559] [782]
+0-- 1
+-00 1
+.names CD9 [659] [782] [557]
+00- 1
+0-0 1
+.names [711] C7 [557] [778]
+0-- 1
+-00 1
+.names CD11 [657] [778] [73]
+00- 1
+0-0 1
+.names [707] C9 [73] [667]
+0-- 1
+-00 1
+.names CD13 [667] CD15 CD14 [776]
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.names [776] CKD [670]
+0- 1
+-0 1
+.names [655] [670] O9i
+00 1
+.names [657] [670] O8i
+00 1
+.names C7 [658]
+0 1
+.names [658] [670] O7i
+00 1
+.names [659] [670] O6i
+00 1
+.names C5 [660]
+0 1
+.names [660] [670] O5i
+00 1
+.names [661] [670] O4i
+00 1
+.names C3 [662]
+0 1
+.names [662] [670] O3i
+00 1
+.names [663] [670] O2i
+00 1
+.names C1 [664]
+0 1
+.names [664] [670] O1i
+00 1
+.names [665] [670] O0i
+00 1
+.names [670] O
+0 1
+.end

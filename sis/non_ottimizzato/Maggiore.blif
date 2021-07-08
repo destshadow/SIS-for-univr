@@ -1,0 +1,42 @@
+.model Maggiore
+.inputs C15 C14 C13 C12 C11 C10 C9 C8 C7 C6 C5 C4 C3 C2 C1 C0 CD15 CD14 CD13 CD12 CD11 CD10 CD9 CD8 CD7 CD6 CD5 CD4 CD3 CD2 CD1 CD0
+.outputs CgtCD
+
+.subckt XOR A=C15 B=CD15 X=X15
+.subckt XOR A=C14 B=CD14 X=X14
+.subckt XOR A=C13 B=CD13 X=X13
+.subckt XOR A=C12 B=CD12 X=X12
+.subckt XOR A=C11 B=CD11 X=X11
+.subckt XOR A=C10 B=CD10 X=X10
+.subckt XOR A=C9 B=CD9 X=X9
+.subckt XOR A=C8 B=CD8 X=X8
+.subckt XOR A=C7 B=CD7 X=X7
+.subckt XOR A=C6 B=CD6 X=X6
+.subckt XOR A=C5 B=CD5 X=X5
+.subckt XOR A=C4 B=CD4 X=X4
+.subckt XOR A=C3 B=CD3 X=X3
+.subckt XOR A=C2 B=CD2 X=X2
+.subckt XOR A=C1 B=CD1 X=X1
+.subckt XOR A=C0 B=CD0 X=X0
+
+.names C15 C14 C13 C12 C11 C10 C9 C8 C7 C6 C5 C4 C3 C2 C1 C0 X15 X14 X13 X12 X11 X10 X9 X8 X7 X6 X5 X4 X3 X2 X1 X0 CgtCD
+
+1---------------1--------------- 1
+-1--------------01-------------- 1
+--1-------------001------------- 1
+---1------------0001------------ 1
+----1-----------00001----------- 1
+-----1----------000001---------- 1
+------1---------0000001--------- 1
+-------1--------00000001-------- 1
+--------1-------000000001------- 1
+---------1------0000000001------ 1
+----------1-----00000000001----- 1
+-----------1----000000000001---- 1
+------------1---0000000000001--- 1
+-------------1--00000000000001-- 1
+--------------1-000000000000001- 1
+---------------10000000000000001 1
+
+.search XOR.blif
+.end

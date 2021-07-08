@@ -1,0 +1,4 @@
+.model Reg1
+.inputs A
+.outputs O
+.latch A O re B1 0

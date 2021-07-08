@@ -1,0 +1,19 @@
+.model Sommadi1
+.inputs REC
+.outputs BLC
+
+.subckt Costante0 O=Costante0
+.subckt Costante1 O=Costante1
+
+.subckt Sommatore2bit A=A B=Costante1 CIN=Costante0 COUT=COUT O=O2
+.subckt Sommatore2bit A=D B=Costante0 CIN=COUT COUT=K O=O1
+.subckt Reg1 A=O1 O=A B1=REC
+.subckt Reg1 A=O2 O=D B1=REC
+
+.search Sommatore2bit.blif
+.search Reg1.blif
+.search Costante0.blif
+.search Costante1.blif
+
+.subckt And A=A B=D K=BLC
+.search And.blif

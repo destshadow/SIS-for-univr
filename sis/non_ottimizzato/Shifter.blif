@@ -1,0 +1,27 @@
+.model Shifter
+.inputs I15 I14 I13 I12 I11 I10 I9 I8 I7 I6 I5 I4 I3 I2 I1 I0
+.outputs O15 O14 O13 O12 O11 O10 O9 O8 O7 O6 O5 O4 O3 O2 O1 O0
+
+.subckt Uguale A=I1 O=C1
+.subckt Uguale A=I0 O=C0
+.subckt Uguale A=I15 O=O13
+.subckt Uguale A=I14 O=O12
+.subckt Uguale A=I13 O=O11
+.subckt Uguale A=I12 O=O10
+.subckt Uguale A=I11 O=O9
+.subckt Uguale A=I10 O=O8
+.subckt Uguale A=I9 O=O7
+.subckt Uguale A=I8 O=O6
+.subckt Uguale A=I7 O=O5
+.subckt Uguale A=I6 O=O4
+.subckt Uguale A=I5 O=O3
+.subckt Uguale A=I4 O=O2
+.subckt Uguale A=I3 O=O1
+.subckt Uguale A=I2 O=O0
+
+.subckt XOR A=C1 B=C1 X=015
+.subckt XOR A=C0 B=C0 X=014
+
+
+.search Uguale.blif
+.search XOR.blif

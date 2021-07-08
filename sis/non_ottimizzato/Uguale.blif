@@ -1,0 +1,6 @@
+.model Uguale
+.inputs A
+.outputs O
+.names A O
+1 1
+.end
