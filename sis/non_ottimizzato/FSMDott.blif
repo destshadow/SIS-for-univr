@@ -1,0 +1,46 @@
+.model FSMD
+.inputs BI0 C1 C2 C3 C4 Cr9 Cr8 Cr7 Cr6 Cr5 Cr4 Cr3 Cr2 Cr1 Cr0 CD15 CD14 CD13 \
+CD12 CD11 CD10 CD9 CD8 CD7 CD6 CD5 CD4 CD3 CD2 CD1 CD0
+.outputs REC ABE BLC O9i O8i O7i O6i O5i O4i O3i O2i O1i O0i
+.names REC
+.names ABE
+.names BLC
+.names O Cr9 O9i
+11 1
+.names O Cr8 O8i
+11 1
+.names O Cr7 O7i
+11 1
+.names O Cr6 O6i
+11 1
+.names O Cr5 O5i
+11 1
+.names O Cr4 O4i
+11 1
+.names O Cr3 O3i
+11 1
+.names O Cr2 O2i
+11 1
+.names O Cr1 O1i
+11 1
+.names O Cr0 O0i
+11 1
+.names Cr9 Cr8 CD15 CD14 CD13 CD12 CD11 [298] O
+--1----- 1
+---1---- 1
+----1--- 1
+-----1-- 1
+0-----1- 1
+00-----1 1
+.names Cr7 Cr6 Cr5 Cr4 Cr3 Cr2 Cr1 Cr0 CD10 CD9 CD8 CD7 CD6 CD5 CD4 CD3 CD2 \
+[298]
+--------1-------- 1
+0--------1------- 1
+00--------1------ 1
+000--------1----- 1
+0000--------1---- 1
+00000--------1--- 1
+000000--------1-- 1
+0000000--------1- 1
+00000000--------1 1
+.end
