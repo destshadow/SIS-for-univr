@@ -1,0 +1,204 @@
+.model FSMD
+.inputs BI0 C1 C2 C3 C4 Cr9 Cr8 Cr7 Cr6 Cr5 Cr4 Cr3 Cr2 Cr1 Cr0 CD15 CD14 CD13 \
+CD12 CD11 CD10 CD9 CD8 CD7 CD6 CD5 CD4 CD3 CD2 CD1 CD0
+.outputs REC ABE BLC O9i O8i O7i O6i O5i O4i O3i O2i O1i O0i
+.default_input_arrival 0.00 0.00 
+.default_output_required 0.00 0.00 
+.default_input_drive 0.20 0.20 
+.default_output_load 1.00 
+.default_max_input_load 999.00 
+.latch    [2102] LatchOut_v6 re NIL 0
+.latch    [2104] LatchOut_v7 re NIL 1
+.latch    [2101] LatchOut_v8 re NIL 0
+.latch    [2100] LatchOut_v9 re NIL 1
+.latch    [2103] LatchOut_v10 re NIL 0
+.names C3 C1 C2 [2230]
+000 1
+.names C4 [2264]
+0 1
+.names [2230] [2264] LatchOut_v8 [2267]
+0-- 1
+-0- 1
+--0 1
+.names LatchOut_v10 [2268]
+0 1
+.names [2268] LatchOut_v7 LatchOut_v10 LatchOut_v6 [2244]
+0-0- 1
+-00- 1
+0--0 1
+-0-0 1
+.names [2244] LatchOut_v6 LatchOut_v7 [2275]
+0-- 1
+-00 1
+.names [2275] LatchOut_v10 LatchOut_v7 [2553]
+0-- 1
+-0- 1
+--0 1
+.names LatchOut_v8 [2265]
+0 1
+.names [2265] [2268] [2269]
+0- 1
+-0 1
+.names LatchOut_v7 LatchOut_v10 [2254]
+01 1
+10 1
+.names [2269] [2254] [2621]
+0- 1
+-0 1
+.names [2553] LatchOut_v10 [2621] [2277]
+0-- 1
+-00 1
+.names [2277] LatchOut_v9 [2624]
+1- 1
+-0 1
+.names [2624] [2621] [2278]
+1- 1
+-0 1
+.names [2267] [2278] [2268] [2275] [2279]
+00-- 1
+--00 1
+.names LatchOut_v6 [2273]
+0 1
+.names LatchOut_v9 [2621] [2273] [2280]
+0-- 1
+-00 1
+.names [2279] [2280] [2620]
+1- 1
+-1 1
+.names [2620] [2102]
+1 1
+.names [2621] [2104]
+1 1
+.names [2275] [2267] [2443]
+1- 1
+-0 1
+.names C3 [2315]
+0 1
+.names C1 [2309]
+0 1
+.names [2315] [2309] C2 [2282]
+0-- 1
+-0- 1
+--0 1
+.names [2265] [2268] [2621] [2085]
+00- 1
+0-0 1
+.names LatchOut_v9 [2272]
+0 1
+.names C4 [2085] [2272] [2283]
+0-- 1
+-00 1
+.names [2443] [2282] [2283] [2622]
+0-- 1
+-00 1
+.names [2622] [2101]
+1 1
+.names [2269] LatchOut_v6 [2287]
+1- 1
+-0 1
+.names [2624] [2287] [2183]
+01 1
+.names [2183] [2275] LatchOut_v7 BI0 [2623]
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names [2623] [2100]
+1 1
+.names [2624] [2103]
+1 1
+.names [2443] REC
+0 1
+.names CD12 [2357]
+0 1
+.names Cr8 [2290]
+0 1
+.names CD10 [2361]
+0 1
+.names Cr6 [2292]
+0 1
+.names CD8 [2365]
+0 1
+.names Cr4 [2294]
+0 1
+.names CD6 [2369]
+0 1
+.names Cr2 [2296]
+0 1
+.names CD4 [2373]
+0 1
+.names Cr0 [2298]
+0 1
+.names CD3 [2298] CD2 [2059]
+00- 1
+0-0 1
+.names [2373] Cr1 [2059] [2519]
+0-- 1
+-00 1
+.names CD5 [2296] [2519] [2057]
+00- 1
+0-0 1
+.names [2369] Cr3 [2057] [2515]
+0-- 1
+-00 1
+.names CD7 [2294] [2515] [2055]
+00- 1
+0-0 1
+.names [2365] Cr5 [2055] [2511]
+0-- 1
+-00 1
+.names CD9 [2292] [2511] [2053]
+00- 1
+0-0 1
+.names [2361] Cr7 [2053] [2507]
+0-- 1
+-00 1
+.names CD11 [2290] [2507] [1567]
+00- 1
+0-0 1
+.names [2357] Cr9 [1567] [2300]
+0-- 1
+-00 1
+.names CD13 [2300] CD15 CD14 [2051]
+0000 1
+.names LatchOut_v7 [2270]
+0 1
+.names [2051] [2270] [2287] [2304]
+1-- 1
+-1- 1
+--1 1
+.names [2304] ABE
+0 1
+.names [2270] [2621] [2275] [2267] BLC
+1111 1
+.names Cr9 [2289]
+0 1
+.names [2289] [2304] O9i
+00 1
+.names [2290] [2304] O8i
+00 1
+.names Cr7 [2291]
+0 1
+.names [2291] [2304] O7i
+00 1
+.names [2292] [2304] O6i
+00 1
+.names Cr5 [2293]
+0 1
+.names [2293] [2304] O5i
+00 1
+.names [2294] [2304] O4i
+00 1
+.names Cr3 [2295]
+0 1
+.names [2295] [2304] O3i
+00 1
+.names [2296] [2304] O2i
+00 1
+.names Cr1 [2297]
+0 1
+.names [2297] [2304] O1i
+00 1
+.names [2298] [2304] O0i
+00 1
+.end
